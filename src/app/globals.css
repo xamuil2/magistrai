@@ -16,18 +16,24 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* globals.css */
+html, body {
+  background-color: #1b1c1e;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* styles.css or a CSS module */
+.verb-box {
+  border: 1px solid red;
+  padding: 2px;
+  border-radius: 3px;
+  background-color: rgba(255, 0, 0, 0.1);
 }
